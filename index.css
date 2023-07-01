@@ -101,23 +101,36 @@ li:nth-child(1) {
     text-decoration: underline;
 }
 
-@media (min-width: 687px) {
-    .content .contentProfile img {
-        width: 150px;
-        margin: 8px;
+/* Adicionando animações */
+@keyframes profileScale {
+    0% {
+        transform: scale(1);
     }
-
-    .logo img {
-        width: 111px;
+    50% {
+        transform: scale(1.1);
     }
-
-    .content {
-        margin-top: 0px;
+    100% {
+        transform: scale(1);
     }
 }
 
-@media (max-width: 687px) {
-    .content {
-        top: 40px;
+@keyframes profileFade {
+    0% {
+        opacity: 0;
     }
+    100% {
+        opacity: 1;
+    }
+}
+
+.content .contentProfile .profile img {
+    animation: profileScale 1.5s infinite;
+}
+
+.content .contentProfile .profile::before {
+    animation: profileFade 0.5s;
+}
+
+.content .contentProfile p {
+    animation: profileFade 0.5s;
 }
