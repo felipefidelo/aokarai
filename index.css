@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    display: flex;
+    display: block;
     justify-content: center;
     margin-top: 40px;
 }
@@ -15,7 +15,7 @@ header img {
 }
 
 .content {
-    display: flex;
+    display: block;
     flex-direction: column;
     align-items: center;
     margin-top: 40px;
@@ -27,7 +27,7 @@ header img {
 }
 
 .profiles {
-    display: flex;
+    display: block;
     flex-wrap: wrap;
     justify-content: center;
 }
