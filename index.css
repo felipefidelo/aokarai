@@ -27,7 +27,6 @@ header img {
 }
 
 .profiles {
-    display: block;
     flex-wrap: wrap;
     justify-content: center;
 }
