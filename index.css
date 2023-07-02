@@ -51,9 +51,11 @@ header img {
     color: rgba(255, 255, 255, 0.7);
     margin-top: 5px;
     font-size: 14px;
-    opacity: 0;
+    opacity: 1;
+    display: block;
     transition: opacity 0.3s;
 }
+
 
 .profile:hover img {
     transform: scale(1.05);
